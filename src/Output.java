@@ -2,11 +2,10 @@ import controller.OrderController;
 import dataSource.BookDataSource;
 
 public class Output {
-    private BookDataSource bookDataSource;
-    private OrderController bookController;
 
-    public Output(BookDataSource bookDataSource, OrderController bookController) {
-        this.bookDataSource = bookDataSource;
+    private final OrderController bookController;
+
+    public Output(OrderController bookController) {
         this.bookController = bookController;
     }
 
